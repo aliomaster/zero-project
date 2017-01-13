@@ -1,0 +1,52 @@
+/******** Apple text hack start ********/
+	div, span, a, li, h1, h2, h3, h4, 
+	h5, h6, td, input, textarea, button {
+		-webkit-text-size-adjust: none;
+		-o-text-size-adjust: none;
+		-moz--text-size-adjust: none;
+		text-size-adjust: none;
+		-webkit-font-smoothing: antialiased;
+		max-height: 999999px;
+	}
+	input[type=text],
+	input[type=password],
+	input[type=submit],
+	textarea {
+		-webkit-appearance: none !important;
+	}
+/******** Apple text hack end ********/
+
+@import 'block/vars.scss';
+@import 'block/font.scss';
+@import 'block/header.scss';
+@import 'block/footer.scss';
+
+/* @import 'block/link.scss';
+@import 'block/main-container.scss';
+
+@import 'block/container.scss';
+@import 'block/map.scss';
+
+@import 'block/widgets-area.scss';
+@import 'block/search-banner.scss';
+
+@import 'block/item-slider.scss';
+
+@import 'block/select2.scss';
+@import 'block/castom-select.scss';
+
+@import 'block/button.scss';
+@import 'block/discount-card.scss';
+@import 'block/recommence-card.scss';
+@import 'block/scrollbar.scss';
+@import 'block/product.scss';
+@import 'block/sidebar.scss';
+@import 'block/jquery-ui.scss';
+
+@import 'block/range-slider.scss';
+@import 'block/range-slider-simple.scss';
+@import 'block/single-product.scss';
+@import 'block/search-result.scss';
+@import 'block/select-range.scss';
+@import 'block/owl-carousel.scss'; */
+
