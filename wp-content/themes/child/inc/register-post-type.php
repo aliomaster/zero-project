@@ -3,6 +3,7 @@
 * Register custom post types
 */
 
+// Register taxonomy Providers for providers
 function register_provider_post_type() {
 	$labels = array(
 		'name' => __( 'Providers', 'wordpress' ),
@@ -37,7 +38,7 @@ function register_provider_post_type() {
 }
 add_action('init', 'register_provider_post_type');
 
-/* register taxonomy Category for providers */
+// Register taxonomy Weeks for providers
 add_action( 'init', 'wpm_providers_taxonomy' );
 
 function wpm_providers_taxonomy() {

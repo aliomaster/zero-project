@@ -2,7 +2,6 @@
 
 /**** WPM WIDGETS AREA ****/
 
-//add_action( 'widgets_init', 'wpm_wg', 30 );
 function wpm_wg() {
 	register_widget( 'wpm_socials' );
 }
@@ -56,3 +55,5 @@ class wpm_socials extends WP_Widget {
 			<input type="text" name="' . $this->get_field_name( 'fblink' ) . '" id="' . $this->get_field_id( 'fblink' ) . '" value="' . esc_attr( $instance['fblink'] ) . '" class="widefat" /></p>';
 	}
 }
+
+//add_action( 'widgets_init', 'wpm_wg', 30 );
