@@ -5,6 +5,9 @@ require_once( get_template_directory() . '/inc/assets.php' );
 // Widgets
 require_once( get_stylesheet_directory() . '/inc/widgets.php' );
 
+// Free payment gateway
+require_once( get_stylesheet_directory() . '/inc/free-payment-gateway.php' );
+
 // Register post type
 require_once( get_stylesheet_directory() . '/inc/register-post-type.php' );
 
