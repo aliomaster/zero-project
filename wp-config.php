@@ -19,62 +19,22 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-$env = '';
 
-switch ( $_SERVER['SERVER_NAME'] ) {
-	case 'sitename' : $env = 'local'; break;
-	case 'demo.wpmonsters.org' : $env = 'stage'; break;
-	case 'sitename.com' : $env = 'live'; break;
-}
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'zero' );
 
-if ( $env == 'local' ) {
-	/** The name of the database for WordPress */
-	define( 'DB_NAME', 'sitename' );
+/** MySQL database username */
+define( 'DB_USER', 'mysql' );
 
-	/** MySQL database username */
-	define( 'DB_USER', 'mysql' );
+/** MySQL database password */
+define( 'DB_PASSWORD', 'mysql' );
 
-	/** MySQL database password */
-	define( 'DB_PASSWORD', 'mysql' );
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );
 
-	/** MySQL hostname */
-	define( 'DB_HOST', 'localhost' );
+define('WP_HOME','http://zero-project');
+define('WP_SITEURL','http://zero-project');
 
-	define('WP_HOME','http://sitename');
-	define('WP_SITEURL','http://sitename');
-
-} elseif ( $env == 'stage' ) {
-	/** The name of the database for WordPress */
-	define( 'DB_NAME', 'monstername' );
-
-	/** MySQL database username */
-	define( 'DB_USER', 'root' );
-
-	/** MySQL database password */
-	define( 'DB_PASSWORD', '' );
-
-	/** MySQL hostname */
-	define( 'DB_HOST', 'localhost' );
-
-	define('WP_HOME','http://demo.wpmonsters.org/monstername');
-	define('WP_SITEURL','http://demo.wpmonsters.org/monstername');
-
-} elseif ( $env == 'live' ) {
-	/** The name of the database for WordPress */
-	define( 'DB_NAME', '' );
-
-	/** MySQL database username */
-	define( 'DB_USER', '' );
-
-	/** MySQL database password */
-	define( 'DB_PASSWORD', '' );
-
-	/** MySQL hostname */
-	define( 'DB_HOST', '' );
-
-	define('WP_HOME','http://sitename.com');
-	define('WP_SITEURL','http://sitename.com');
-}
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -95,14 +55,15 @@ define( 'FS_METHOD','direct' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'mW7Y1&_M{?@(2(.G7@>J0;,UMwvqz#WA(zr]|U:m(AufT&`C&,PBw._9!| XoSm+');
+define('SECURE_AUTH_KEY',  'qX2,cNV:Bg`-]Y*if& [P8$2HLI}|%qY*a{Ah&n8+-Rg1/>SK~9}5)$j)eNqE6o9');
+define('LOGGED_IN_KEY',    '>p2G51#2?f5 p52zz_ml%+ET=3i]9BSH/e jNl|-Lf}U9 *DSd:E|l`^KO7+r(4s');
+define('NONCE_KEY',        '4U(P48yg @_K*F!csKq;b{yN*l&PVC]&h9a!^w`<u/H>++4w?{O$-6/Xrxfp=%-!');
+define('AUTH_SALT',        'UI_8KNT[?|V4_peL+DsFKbR~zMuo}T [2!e5/&:1f;n/9783+&>ppV mUD4=gd!R');
+define('SECURE_AUTH_SALT', '6a)hFDt)+OXoS]45A? *x7@ogT*-3oE+r$vYS+X+`=uBKi[ia2ZC8rKdXR_n~f4J');
+define('LOGGED_IN_SALT',   '.JrLd|y!}2n$S&;}pi+0XV%AV};n633W2LqfwnR_&}z!~7SR48{|A{!~!pr ;2JG');
+define('NONCE_SALT',       '1|VPQ[D~3tt-MxD$()+|ZqNa4V{9l@-F&(p;oo|`ySprH^7i&Br;B[tFheU/5.?<');
+
 
 /**#@-*/
 
