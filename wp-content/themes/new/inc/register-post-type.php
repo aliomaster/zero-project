@@ -38,9 +38,9 @@ function register_provider_post_type() {
 add_action('init', 'register_provider_post_type');
 
 /* register taxonomy Category for providers */
-add_action( 'init', 'wpm_providers_taxonomy' );
+add_action( 'init', 'alio_providers_taxonomy' );
 
-function wpm_providers_taxonomy() {
+function alio_providers_taxonomy() {
 	$labels = array(
 		'name'              => 'Weeks',
 		'singular_name'     => 'Week',

@@ -1,1 +1,1 @@
-# WP Starter for WPM projects
+# WP Starter for WPM/ALIO projects

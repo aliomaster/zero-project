@@ -1,6 +1,6 @@
 <?php
 // Styles & Scripts for frontend
-function wpm_init_assets() {
+function alio_init_assets() {
 
 	// Register assets
 	wp_register_style( 'main-styles', get_stylesheet_directory_uri() . '/css/main.css' );
@@ -15,17 +15,17 @@ function wpm_init_assets() {
 	$ajax = array(
 		'url' => admin_url( 'admin-ajax.php' )
 	);
-	wp_localize_script( 'jquery', 'wpm_ajax', $ajax );
+	wp_localize_script( 'jquery', 'alio_ajax', $ajax );
 
 }
-add_action( 'wp_enqueue_scripts', 'wpm_init_assets', 20 );
+add_action( 'wp_enqueue_scripts', 'alio_init_assets', 20 );
 
 // Styles & Scripts for admin
-function wpm_add_scripts_admin() {
+function alio_add_scripts_admin() {
 	// Register assets
 	wp_register_style( 'admin-styles', get_stylesheet_directory_uri() . '/css/admin.css' );
 
 	wp_enqueue_style( 'admin-styles' );
 }
 
-add_action( 'admin_init', 'wpm_add_scripts_admin' );
+add_action( 'admin_init', 'alio_add_scripts_admin' );

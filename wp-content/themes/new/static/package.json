@@ -1,5 +1,5 @@
 {
-	"name": "wpmproject",
+	"name": "alioproject",
 	"version": "1.0.0",
 	"description": "",
 	"main": "gulpfile.js",
@@ -8,14 +8,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@gitlab.com/wpmonsters/wpmproject.git"
+		"url": "git+ssh://git@gitlab.com/alioonsters/alioproject.git"
 	},
-	"author": "a2design/wpmonsters",
+	"author": "a2design/alioonsters",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://gitlab.com/wpmonsters/wpmproject/issues"
+		"url": "https://gitlab.com/alioonsters/alioproject/issues"
 	},
-	"homepage": "https://gitlab.com/wpmonsters/wpmproject#README",
+	"homepage": "https://gitlab.com/alioonsters/alioproject#README",
 	"devDependencies": {
 		"gulp": "^3.9.1",
 		"gulp-autoprefixer": "^3.1.1",

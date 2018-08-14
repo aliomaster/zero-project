@@ -1,17 +1,17 @@
 <?php
 
-/**** WPM WIDGETS AREA ****/
+/**** ALIO WIDGETS AREA ****/
 
-function wpm_wg() {
-	register_widget( 'wpm_socials' );
+function alio_wg() {
+	register_widget( 'alio_socials' );
 }
 
-// WPM Socials
-class wpm_socials extends WP_Widget {
+// ALIO Socials
+class alio_socials extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
-			'wpm_socials', // Base ID
-			'WPM Socials', // Name
+			'alio_socials', // Base ID
+			'ALIO Socials', // Name
 			array( 'description' => __( 'Display Logo Social Icons' ), ) // Args
 		);
 	}
@@ -56,4 +56,4 @@ class wpm_socials extends WP_Widget {
 	}
 }
 
-//add_action( 'widgets_init', 'wpm_wg', 30 );
+//add_action( 'widgets_init', 'alio_wg', 30 );
