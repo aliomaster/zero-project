@@ -19,22 +19,61 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+$env = '';
 
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'zero' );
+switch ( $_SERVER['SERVER_NAME'] ) {
+    case 'localsitename' : $env = 'local'; break;
+    case '188.166.67.51' : $env = 'stage'; break;
+    case 'livesitename' : $env = 'live'; break;
+}
 
-/** MySQL database username */
-define( 'DB_USER', 'mysql' );
+if ( $env == 'local' ) {
+    /** The name of the database for WordPress */
+    define( 'DB_NAME', 'localsitename' );
 
-/** MySQL database password */
-define( 'DB_PASSWORD', 'mysql' );
+    /** MySQL database username */
+    define( 'DB_USER', 'root' );
 
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+    /** MySQL database password */
+    define( 'DB_PASSWORD', '' );
 
-define('WP_HOME','http://zero-project');
-define('WP_SITEURL','http://zero-project');
+    /** MySQL hostname */
+    define( 'DB_HOST', '127.0.0.1' );
 
+    define('WP_HOME','http://localsitename');
+    define('WP_SITEURL','http://localsitename');
+
+} elseif ( $env == 'stage' ) {
+    /** The name of the database for WordPress */
+    define( 'DB_NAME', 'monstername' );
+
+    /** MySQL database username */
+    define( 'DB_USER', 'root' );
+
+    /** MySQL database password */
+    define( 'DB_PASSWORD', 'wpmpassfromotherproject' );
+
+    /** MySQL hostname */
+    define( 'DB_HOST', 'localhost' );
+
+    define('WP_HOME','http://188.166.67.51/monstername');
+    define('WP_SITEURL','http://188.166.67.51/monstername');
+} elseif ( $env == 'live' ) {
+    /** The name of the database for WordPress */
+    define( 'DB_NAME', 'marinaportal' );
+
+    /** MySQL database username */
+    define( 'DB_USER', 'marinaportal' );
+
+    /** MySQL database password */
+    define( 'DB_PASSWORD', 'timnupdft1cC' );
+
+    /** MySQL hostname */
+    define( 'DB_HOST', '' );
+
+    define('WP_HOME','http://livesitename.com');
+    define('WP_SITEURL','http://livesitename.com');
+}
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
