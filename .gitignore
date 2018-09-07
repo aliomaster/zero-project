@@ -54,7 +54,7 @@ jspm_packages
 
 ### WordPress ###
 *.log
-# wp-config.php
+wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -184,3 +184,6 @@ Temporary Items
 
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
+wp-config.php 
+D:\developer\OSPanel\domains\zero-project\wp-config.php 
+D:\developer\OSPanel\domains\zero-project 
