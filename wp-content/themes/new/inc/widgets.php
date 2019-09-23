@@ -45,7 +45,6 @@ class wpm_socials extends WP_Widget {
 
 	//widget settings form
 	public function form( $instance ) {
-		extract( $instance );
 		echo '
 		<p><label>Logo link:</label>
 			<input type="text" name="'.$this -> get_field_name( 'logolink' ).'" id="'.$this -> get_field_id( 'logolink' ).'" value="'.esc_attr($instance['logolink']).'" class="widefat" /></p>
