@@ -1,0 +1,66 @@
+/* M E D I A  Q U E R I E S */
+
+@import 'vc-styles.css';
+
+@media only screen and (max-width: 1280px) {
+  .rh-grid,
+  .rh-container-inner,
+  .rh-grid-section .rh-section-inner,
+  .rh-slider .carousel-inner .rh-slider-content-outer {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .rh-grid,
+  .rh-container-inner,
+  .rh-grid-section .rh-section-inner,
+  .rh-slider .carousel-inner .rh-slider-content-outer {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .rh-grid,
+  .rh-container-inner,
+  .rh-grid-section .rh-section-inner,
+  .rh-slider .carousel-inner .rh-slider-content-outer {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rh-grid,
+  .rh-container-inner,
+  .rh-grid-section .rh-section-inner,
+  .rh-slider .carousel-inner .rh-slider-content-outer {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rh-grid,
+  .rh-container-inner,
+  .rh-grid-section .rh-section-inner,
+  .rh-slider .carousel-inner .rh-slider-content-outer {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rh-grid,
+  .rh-container-inner,
+  .rh-grid-section .rh-section-inner,
+  .rh-slider .carousel-inner .rh-slider-content-outer {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .rh-grid,
+  .rh-container-inner,
+  .rh-grid-section .rh-section-inner,
+  .rh-slider .carousel-inner .rh-slider-content-outer {
+    width: 95%;
+  }
+}

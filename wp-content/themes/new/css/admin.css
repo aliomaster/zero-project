@@ -1,0 +1,6 @@
+#adminmenu div.wp-menu-image.dashicons-images-alt2:before {
+    font-family:  "Font Awesome 5 Pro" !important;
+    content: '\f49d';
+    font-weight: 600;
+    color: yellowgreen;
+}
